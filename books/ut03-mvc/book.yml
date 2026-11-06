@@ -1,0 +1,33 @@
+id: ut03-mvc
+type: book
+
+title: MVC y patrones de diseño
+
+description: >
+  Introducción al patrón MVC y su aplicación
+  en aplicaciones web con PHP.
+
+summary: >
+  Introducción al patrón MVC y su aplicación
+  en aplicaciones web con PHP.
+tags: [php, patrones, arquitectura]
+audience: 2º DAW · DWES
+
+numbering: numbers
+
+chapters:
+  - id: introduccion
+    title: Introducción
+    file: 01-introduccion.md
+  - id: mvc
+    title: El patrón MVC
+    file: 02-mvc.md
+  - id: model
+    title: El modelo
+    file: 03-model.md
+  - id: view
+    title: La vista
+    file: 04-view.md
+  - id: controller
+    title: El controlador
+    file: 05-controller.md
