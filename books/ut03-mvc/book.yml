@@ -31,3 +31,6 @@ chapters:
   - id: controller
     title: El controlador
     file: 05-controller.md
+  - id: recursos
+    title: Para saber más
+    file: 06-recursos.md

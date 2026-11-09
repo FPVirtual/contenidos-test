@@ -2,6 +2,10 @@
 
 MVC divide la aplicación en tres componentes:
 
+:::note
+Este patrón nació en Smalltalk-80 y sigue vigente 40 años después.
+:::
+
 | Componente | Responsabilidad | Ejemplo en PHP |
 |------------|-----------------|----------------|
 | Modelo | Datos y lógica de negocio | `Usuario::find(1)` |
