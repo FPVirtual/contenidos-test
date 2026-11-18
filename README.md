@@ -1,21 +1,27 @@
 # contenidos-test
 
-Repositorio de contenidos de prueba para **Moodle Course as Code** (entorno
-alpha): módulo *Desarrollo Web en Entorno Servidor* (2º DAW).
+Repositorio de **materiales docentes LiaScript** para el sistema
+*Materiales Editables* (LiaEditor–Moodle). Git es la única fuente de
+verdad del contenido; Moodle solo lo vincula y publica.
 
 ## Estructura
 
 ```text
-course.yml          # manifest del curso (lista de books)
-books/ut03-mvc/     # book de prueba: MVC y patrones de diseño
+materiales/          # un material = un fichero .md LiaScript
+├── ut03-mvc.md      # UT03 — El patrón MVC en PHP
+├── ut04-pdo.md      # UT04 — La capa de acceso a datos con PDO
+└── demo-liascript.md # escaparate de capacidades LiaScript
 ```
 
-## Flujo de publicación
+Cada material lleva una cabecera de comentario HTML con metadatos
+LiaScript (`author`, `title`, `language`, `version`, `comment`). El
+`title` alimenta el catálogo de Moodle.
 
-1. Edita el contenido y valida: `courseascode validate .`
-2. Preview local: `courseascode preview books/ut03-mvc`
-3. Publica una versión con tag: `git tag book/ut03-mvc/v1.1.0 && git push --tags`
-4. Los cursos Moodle vinculados verán `UPDATE_AVAILABLE` en el panel del
-   plugin `local_courseascode`.
+## Flujo de edición
 
-Las versiones oficiales son los tags `book/<id>/vX.Y.Z` (nunca HEAD).
+- El profesorado **no edita aquí directamente**: lo hace desde Moodle con
+  el editor LiaEdit, que crea ramas `edicion/<usuario>/<material>` y
+  commitea con token de servidor.
+- Los conflictos de edición concurrente se resuelven en ramas
+  `resolucion/<usuario>/<timestamp>-<material>`.
+- `main` es la línea oficial (máster). Solo mantenedores.
