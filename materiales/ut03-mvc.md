@@ -3,7 +3,7 @@
 author:   Equipo DWES
 title:    UT03 — El patrón MVC en PHP
 language: es
-version:  2.0.0
+version:  2.0.1
 comment:  Unidad de ejemplo del sistema Materiales Editables. Cubre el
           patrón Modelo-Vista-Controlador con ejemplos en PHP y
           autoevaluación LiaScript.
@@ -99,22 +99,22 @@ Si aparece alguna, la responsabilidad está en la capa equivocada.
 
 **1.** ¿En qué capa debe vivir una consulta SQL?
 
-    [[Vista]]
-    [[Controlador]]
-    [[Modelo|X]]
-    [[?]] ¿Quién conoce la estructura de la base de datos?
+[( )] Vista
+[( )] Controlador
+[(X)] Modelo
+[[?]] ¿Quién conoce la estructura de la base de datos?
 
 **2.** Selecciona las afirmaciones correctas:
 
-    [[ ]] La vista puede llamar al modelo directamente si es más rápido.
-    [[X]] El controlador coordina modelo y vista sin conocer detalles de SQL.
-    [[X]] `htmlspecialchars` pertenece a la capa de presentación.
-    [[ ]] El modelo debe devolver HTML ya maquetado.
+[[ ]] La vista puede llamar al modelo directamente si es más rápido.
+[[X]] El controlador coordina modelo y vista sin conocer detalles de SQL.
+[[X]] `htmlspecialchars` pertenece a la capa de presentación.
+[[ ]] El modelo debe devolver HTML ya maquetado.
 
 **3.** Escribe el nombre de la capa que falta: «El ________ decide qué
 vista se muestra tras procesar la petición».
 
-    [[controlador]]
+[[controlador]]
 
 ## Para practicar
 

@@ -3,7 +3,7 @@
 author:   Equipo DWES
 title:    UT04 — La capa de acceso a datos con PDO
 language: es
-version:  2.0.0
+version:  2.0.1
 comment:  Unidad de ejemplo del sistema Materiales Editables. Sentencias
           preparadas con PDO y organización de la capa de acceso a datos.
 
@@ -94,21 +94,22 @@ Controlador ──▶ UsuarioRepository ──▶ PDO ──▶ MySQL
 
 **1.** ¿Qué marcador es válido en una sentencia preparada PDO?
 
-    [[$id]]
-    [[:id|X]]
-    [[#id]]
+[( )] `$id`
+[(X)] `:id`
+[( )] `#id`
+[[?]] Los marcadores con nombre empiezan por dos puntos.
 
 **2.** Selecciona las prácticas correctas:
 
-    [[X]] Usar siempre sentencias preparadas con datos externos.
-    [[ ]] Concatenar el email si está validado con filter_var.
-    [[X]] Configurar PDO::ERRMODE_EXCEPTION.
-    [[X]] Devolver null (o lanzar) cuando no hay resultado, nunca false a secas.
+[[X]] Usar siempre sentencias preparadas con datos externos.
+[[ ]] Concatenar el email si está validado con filter_var.
+[[X]] Configurar PDO::ERRMODE_EXCEPTION.
+[[X]] Devolver null (o lanzar) cuando no hay resultado, nunca false a secas.
 
 **3.** Completa: «El acceso a la base de datos vive en la capa del
 ________».
 
-    [[modelo]]
+[[modelo]]
 
 ## Para practicar
 
