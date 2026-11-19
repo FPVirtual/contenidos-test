@@ -28,6 +28,8 @@ tres capas con responsabilidades claras:
 | **Vista** | Presentación al usuario | Consultar la base de datos |
 | **Controlador** | Coordinar petición → acción → respuesta | Contener SQL ni HTML |
 
+![1.00]()
+
 ```text
  Navegador ──petición──▶ Router ──▶ Controlador ──▶ Modelo
                                         │              │
