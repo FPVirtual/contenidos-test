@@ -47,6 +47,8 @@ comment:  Unidad de ejemplo del sistema Materiales Editables. Estado entre
 HTTP es un protocolo sin estado: cada petición llega al servidor sin
 memoria de las anteriores.
 
+![1.00]()
+
 Cada petición HTTP es independiente. Para que una tienda «recuerde» el
 carrito o una aplicación sepa quién ha iniciado sesión, el estado tiene
 que viajar en cada petición o guardarse en el servidor con una clave que
