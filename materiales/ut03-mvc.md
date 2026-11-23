@@ -10,13 +10,20 @@ comment:  Unidad de ejemplo del sistema Materiales Editables. Cubre el
 
 -->
 
-# UT03 — El patrón MVC en PHP
+# U2b
 
 > Al terminar esta unidad serás capaz de explicar las tres capas del patrón
 > MVC, trazar el ciclo de vida de una petición y separar correctamente las
 > responsabilidades en una aplicación PHP.
 
 ## ¿Por qué MVC?
+
+[( )] HTTP
+[(X)] HTTPS
+[( )] FTP
+
+--{{0}}--
+Bienvenidos a la unidad. En esta sección veremos el patrón MVC.
 
 Sin estructura, una aplicación PHP mezcla SQL, HTML y lógica en el mismo
 fichero. El patrón **Modelo–Vista–Controlador** propone una separación en
