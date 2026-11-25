@@ -21,6 +21,8 @@ comment:  Unidad de ejemplo del sistema Materiales Editables. Sentencias
 bases de datos de forma uniforme: mismo código para MySQL, PostgreSQL o
 SQLite, y **sentencias preparadas** contra la inyección SQL.
 
+![](img/captura-2-aaeef56c.jpg)
+
 ## Conexión segura
 
 ```php
