@@ -10,6 +10,10 @@ comment:  Unidad de ejemplo del sistema Materiales Editables. Cubre el
 
 -->
 
+#
+
+![](img/captura-de-pantalla-f5c468f2.jpg)
+
 # UT03 — El patrón MVC en PHP
 
 > Al terminar esta unidad serás capaz de explicar las tres capas del patrón
@@ -122,3 +126,9 @@ cambiarías si mañana cambia el diseño? ¿Y si cambia la base de datos?
 ![]()
 
 ![Foto de prueba LIA-124: líneas amarillas y un círculo rojo sobre fondo verde](img/lia124-foto-e8bf7fe2.jpg)
+
+I
+
+![](img/arrastre-escritorio-736d34f2.png)
+
+mágenes pegadas y arrastradas (LIA-124):
