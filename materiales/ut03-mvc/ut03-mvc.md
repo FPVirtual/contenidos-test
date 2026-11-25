@@ -131,4 +131,4 @@ I
 
 ![](img/arrastre-escritorio-736d34f2.png)
 
-mágenes pegadas y arrastradas (LIA-124):
+mágenes pegadas y arrastradas (LIA-124): Cambio desde la pestaña A.
