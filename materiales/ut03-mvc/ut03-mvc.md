@@ -28,7 +28,7 @@ tres capas con responsabilidades claras:
 | **Vista** | Presentación al usuario | Consultar la base de datos |
 | **Controlador** | Coordinar petición → acción → respuesta | Contener SQL ni HTML |
 
-![Flujo MVC: el navegador envía la petición al router, el controlador pide los datos al modelo y la vista genera la respuesta HTML](img/mvc-flujo.png "Flujo de una petición en MVC")
+![Flujo MVC: el navegador envía la petición al router, el conFoto de prueba LIA-124: líneas amarillas y un círculo rojo sobre fondo verdetrolador pide los datos al modelo y la vista genera la respuesta HTML](img/mvc-flujo.png "Flujo de una petición en MVC")
 
 ## Un controlador mínimo
 
