@@ -11,19 +11,33 @@ constructos LiaScript que el editor debe conservar.
 ## Estructura
 
 ```text
-materiales/                  # un material = un fichero .md LiaScript
-├── ut03-mvc.md              # UT03 — El patrón MVC en PHP
-├── ut04-pdo.md              # UT04 — La capa de acceso a datos con PDO
-├── ut05-sesiones.md         # UT05 — Sesiones y cookies en PHP
-├── demo-liascript.md        # escaparate de capacidades LiaScript
-└── demo-python-pyodide.md   # Python ejecutable con plantilla importada
+materiales/                      # un material = una carpeta con su .md LiaScript
+├── ut03-mvc/
+│   ├── ut03-mvc.md              # UT03 — El patrón MVC en PHP
+│   └── img/mvc-flujo.png
+├── ut04-pdo/
+│   ├── ut04-pdo.md              # UT04 — La capa de acceso a datos con PDO
+│   └── img/capas-pdo.png
+├── ut05-sesiones/
+│   ├── ut05-sesiones.md         # UT05 — Sesiones y cookies en PHP
+│   └── img/cookie-sesion.png    # PNG con transparencia
+├── demo-liascript/
+│   ├── demo-liascript.md        # escaparate de capacidades LiaScript
+│   └── img/paisaje.jpg, img/cargando.gif
+└── demo-python-pyodide/
+    └── demo-python-pyodide.md   # Python ejecutable con plantilla importada
 ```
+
+**Un material por carpeta.** Las exportaciones de liaex (H5P, SCORM…)
+trabajan sobre la carpeta del material, y el editor solo sirve y guarda
+imágenes dentro de ella. Si dos materiales compartieran carpeta, cada
+paquete incluiría el otro `.md`.
 
 | Material | Qué cubre |
 | --- | --- |
 | `ut03-mvc`, `ut04-pdo` | Unidades de prosa con tablas, código PHP y autoevaluación (opción única, múltiple, respuesta corta) |
 | `ut05-sesiones` | Unidad completa con cajas (`@nota`, `@aviso`, `@error`), narración, animaciones `{{n}}` con bloques `****`, quiz con solución, matriz, selección en línea y encuesta |
-| `demo-liascript` | Todos los tipos de quiz y encuesta, cajas, fórmulas, notas al pie, `~sub~`/`^sup^`, JavaScript ejecutable, animaciones y narración |
+| `demo-liascript` | Imágenes (JPEG de bloque con título, GIF animado en línea), todos los tipos de quiz y encuesta, cajas, fórmulas, notas al pie, `~sub~`/`^sup^`, JavaScript ejecutable, animaciones y narración |
 | `demo-python-pyodide` | `import:` de una plantilla externa fijada (LiaTemplates/Pyodide 0.3.5) y bloques `@Pyodide.eval`. Al exportarlo, liaex necesita red para descargar la plantilla |
 
 ## Convenciones
@@ -46,13 +60,17 @@ LiaScript (`author`, `title`, `language`, `version`, `comment`). El
   paréntesis.
 - **Plantillas** importadas siempre con versión fija en la URL (etiqueta,
   nunca `main`/`master`).
+- **Imágenes** en `img/` dentro de la carpeta del material, con ruta
+  relativa (`![texto alternativo](img/foto.jpg)`). PNG, JPEG o GIF; nunca
+  SVG ni WebP (el H5P descarta las WebP). El texto alternativo es
+  obligatorio: describe la imagen. Desde el editor se suben solas a `img/`.
 - Solo encabezados `#` (ATX): LiaScript no trata `Título\n=====` como
   sección.
 
 Comprobación antes de subir un cambio (requiere Docker):
 
 ```bash
-docker run --rm -v "$PWD/materiales":/work liascript/exporter \
+docker run --rm -v "$PWD/materiales/<material>":/work liascript/exporter \
   liaex -i /work/<material>.md -f fullJson -o /work/<material>
 ```
 

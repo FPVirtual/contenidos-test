@@ -78,6 +78,8 @@ function crearUsuario(PDO $pdo, string $nombre, string $email): int {
 Siguiendo la UT03, estas funciones pertenecen al **modelo** (repositorio).
 Ni la vista ni el controlador deberían ver un `PDO::prepare`:
 
+![Capas: el controlador llama al repositorio, el repositorio usa PDO y PDO habla con MySQL](img/capas-pdo.png)
+
 ```text
 Controlador ──▶ UsuarioRepository ──▶ PDO ──▶ MySQL
      │                                   

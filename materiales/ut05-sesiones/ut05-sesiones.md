@@ -83,6 +83,8 @@ $tema = $_COOKIE['tema'] ?? 'claro';
 La sesión guarda los datos en el servidor y solo envía al navegador un
 identificador aleatorio (por defecto, la cookie `PHPSESSID`).
 
+![Secuencia: el servidor envía la cookie PHPSESSID, el navegador la devuelve en cada petición y tras el login el servidor regenera el identificador](img/cookie-sesion.png)
+
 ```php
 <?php
 session_start();                       // siempre antes de usar $_SESSION

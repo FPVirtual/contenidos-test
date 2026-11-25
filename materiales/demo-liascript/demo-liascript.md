@@ -51,6 +51,17 @@ subíndices H~2~O y superíndices E=mc^2^, enlaces a
 > Las citas en bloque sirven para objetivos, avisos o definiciones
 > destacadas.
 
+## Imágenes
+
+Las imágenes viven en la carpeta `img/` del material y se enlazan con
+rutas relativas. El texto entre corchetes es el **texto alternativo**:
+descríbela para quien no pueda verla.
+
+![Paisaje de montañas verdes bajo un cielo azul con el sol](img/paisaje.jpg "Una foto en JPEG")
+
+También pueden ir dentro de un párrafo, como este indicador animado
+![Indicador de carga animado](img/cargando.gif) en GIF.
+
 ## Cajas de nota, aviso y error
 
 Las cajas son *macros* definidas en la cabecera del material. El texto va
