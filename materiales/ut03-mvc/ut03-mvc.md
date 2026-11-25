@@ -118,3 +118,5 @@ Toma un script tuyo que mezcle SQL y HTML y reescríbelo en tres ficheros
 cambiarías si mañana cambia el diseño? ¿Y si cambia la base de datos?
 
 ![]()
+
+![]()
