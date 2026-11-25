@@ -116,3 +116,5 @@ vista se muestra tras procesar la petición».
 Toma un script tuyo que mezcle SQL y HTML y reescríbelo en tres ficheros
 (modelo, vista, controlador). Compara el antes y el después: ¿qué fichero
 cambiarías si mañana cambia el diseño? ¿Y si cambia la base de datos?
+
+![]()
