@@ -9,7 +9,7 @@ comment:  Unidad de ejemplo del sistema Materiales Editables. Sentencias
 
 -->
 
-# UT04 — La capa de acceso a datos con PDO
+# UT04 - La capa de acceso a datos con PDO
 
 > Al terminar esta unidad serás capaz de conectar con una base de datos
 > usando PDO, escribir consultas con sentencias preparadas y organizar el
@@ -120,3 +120,20 @@ ________».
 Escribe `listadoUsuarios(PDO $pdo, string $filtro): array` que busque por
 nombre con `LIKE` usando marcadores. Pruébalo con el filtro
 `%' OR '1'='1` y comprueba que no pasa nada.
+
+## **Prueba de carga de imágen**
+
+![](img/bienvenido-web-tytoalba-a76eefe6.jpg)<!-- style="width: 100%;" -->
+
+<div class="lia-columnas" style="display: flex; flex-wrap: wrap; gap: 1.5em;">
+<div class="lia-columna" style="flex: 1 1 14em; min-width: 0;">
+
+**Columna Uno**
+
+</div>
+<div class="lia-columna" style="flex: 1 1 14em; min-width: 0;">
+
+**Columna Dos**
+
+</div>
+</div>
